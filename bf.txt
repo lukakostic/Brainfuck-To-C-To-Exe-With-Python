@@ -1,0 +1,30 @@
++++++++++++++ 13
+
+[
+>
++++++ 5
+>
++++++ 5
+<
+<
+-
+]
+
+equals 65
+
+65 = A
+66 = B
+
+>>+<< plus 1 on second cell
+
+print the 2 cells:
+>
+.
+>
+.
+
+Infinite input:
+[
+, Ask for input
+. Then print it
+]
