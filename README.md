@@ -23,5 +23,5 @@ Syntax:
 
 All code is very simple and commented, you could easily add more commands!
 
+![bf](https://user-images.githubusercontent.com/41348897/44121252-9053e622-a01f-11e8-9474-8d37967321dd.png)
 
-![bf](https://user-images.githubusercontent.com/41348897/44120230-0710bdfc-a01c-11e8-8e23-46a0d7b9b149.png)
