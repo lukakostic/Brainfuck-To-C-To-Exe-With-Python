@@ -3,6 +3,8 @@ Used python to make a brainfuck to C compiler, then used TCC to compile to exe, 
 
 TCC = Tiny C Compiler
 
+Version with digital mars compiler instead of tcc: https://github.com/lukakostic/Brainfuck-To-C-To-Exe-With-Python2
+
 Start Compile.py, then check the Generated folder, should have a .c and a .exe
 
 Starts the compiled exe automatically
