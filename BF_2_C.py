@@ -2,34 +2,29 @@
 class BF_2_C:
     bf = ""
     c = ""
-
+	
     def Compile_C(self):
         self.c = ""
-
+		
         
         for i, ch in enumerate(self.bf): #Ignores unknown commands so you can comment
           
             if(ch=='.'):
-                self.c += """printf("%c",cells[pointer]);\n"""
+                self.c += "o;\n"
             if(ch==','):
-                self.c += """
-scanf("%c%*c", & inp);
-cells[pointer] = inp[0];
-"""
+                self.c += "s;\n"
             if(ch=='+'):
-                self.c += "cells[pointer]+=1;\n"
+                self.c += "cp++;\n"
             if(ch=='-'):
-                self.c += "cells[pointer]-=1;\n"
+                self.c += "cp--;\n"
             if(ch=='>'):
-                self.c += "pointer+=1;\n"
+                self.c += "p++;\n"
             if(ch=='<'):
-                self.c += "pointer-=1;\n"
+                self.c += "p--;\n"
             if(ch=='['):
-                self.c+="""int c{} = pointer;
-while(cells[c{}]>0){{
-""".format(str(i),str(i))
+                self.c+="while(cp){{".format(str(i))
             if(ch==']'):
-                self.c+="} \n"
+                self.c+="}\n"
                 
         self.c = self.wrap(self.c)
         
@@ -41,23 +36,23 @@ while(cells[c{}]>0){{
         pre = """
 #include <stdio.h>
 #include <stdlib.h>
-
-int cells[9999]; // all cells
-int pointer = 0; // current cell
-char inp[256]; // used for input
+#define cp c[p]
+#define o printf("%c",cp)
+#define s scanf("%c%*c",&i);cp=i[0]
 
 int main () 
 {
+
+char c[9999]; // all cells
+int p = 0; // current cell
+char i[256]; // used for input
 
 
 """
         post = """
 
-while(1){}
-
 
 return 0;
-
 }
 
 """
