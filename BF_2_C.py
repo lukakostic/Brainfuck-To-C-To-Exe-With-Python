@@ -51,6 +51,7 @@ char i[256]; // used for input
 """
         post = """
 
+while(1){}
 
 return 0;
 }
