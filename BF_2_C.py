@@ -34,8 +34,8 @@ class BF_2_C:
 
     def wrap(self,txt): # Add stuff that encapsulates bf to make it work (the cells, main function, etc.)
         pre = """
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 #define cp c[p]
 #define o printf("%c",cp)
 #define s scanf("%c%*c",&i);cp=i[0]
@@ -43,9 +43,11 @@ class BF_2_C:
 int main () 
 {
 
-char c[9999]; // all cells
+unsigned char c[9999]; // all cells
 int p = 0; // current cell
 char i[256]; // used for input
+
+int j;for(j=0;j<9999;j++)c[j]=0; //reset all chars to 0
 
 
 """
